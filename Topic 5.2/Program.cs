@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             double grade;
+            double bet;
             string name;
             int age;
 
@@ -32,6 +33,9 @@
             {
                 Console.WriteLine("Be safe out there!");
             }
+
+            Console.WriteLine("How much will you bet?");
+
         }
     }
 }
