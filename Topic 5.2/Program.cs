@@ -11,6 +11,7 @@ namespace Topic_5._2
             string name;
             int age;
             int betNum;
+            string number;
 
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
@@ -45,7 +46,7 @@ namespace Topic_5._2
             {
                 Console.WriteLine("You bet " + betNum.ToString("C"));
             }
-            else
+            // else Bracket issue persists
             {
                 Console.WriteLine("Invalid number");
                 Console.WriteLine("Your bet is set to the minumum of 1.00$");
@@ -77,8 +78,26 @@ namespace Topic_5._2
             {
                 Console.WriteLine("Wow! This is an A grade! Great job!");
             }
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
 
-
+            //Multiple choice
+            Console.WriteLine("Which number is even?");
+            Console.WriteLine("\t Five, Seven, Four, Nineteen \t");
+            number = Console.ReadLine();
+            if (number == "Five" + "five")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
+            }
+            else if (number == "Seven" + "seven")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
+            }
+            else if (number == "Four" + "four")
+            {
+                Console.WriteLine("Correct!");
+            }
         }
     }
 }
