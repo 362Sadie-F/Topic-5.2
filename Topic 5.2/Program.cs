@@ -1,4 +1,6 @@
-﻿namespace Topic_5._2
+﻿using System.ComponentModel.Design;
+
+namespace Topic_5._2
 {
     internal class Program
     {
@@ -8,6 +10,7 @@
             double bet;
             string name;
             int age;
+            int betNum;
 
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
@@ -33,9 +36,26 @@
             {
                 Console.WriteLine("Be safe out there!");
             }
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
 
             Console.WriteLine("How much will you bet?");
-
+            betNum = Convert.ToInt32(Console.ReadLine());
+            if (int.TryParse(Console.ReadLine(), out betNum));
+            {
+                Console.WriteLine("You bet " + betNum.ToString("C"));
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+                Console.WriteLine("Your bet is set to the minumum of 1.00$");
+                betNum = 1;
+            }
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+        }
         }
     }
 }
