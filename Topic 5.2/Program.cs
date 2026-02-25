@@ -41,7 +41,6 @@ namespace Topic_5._2
             Console.Clear();
 
             Console.WriteLine("How much will you bet?");
-            betNum = Convert.ToInt32(Console.ReadLine());
             if (int.TryParse(Console.ReadLine(), out betNum));
             {
                 Console.WriteLine("You bet " + betNum.ToString("C"));
@@ -58,4 +57,4 @@ namespace Topic_5._2
         }
         }
     }
-}
+
