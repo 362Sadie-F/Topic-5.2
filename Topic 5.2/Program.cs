@@ -14,7 +14,7 @@ namespace Topic_5._2
 
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
-            if (grade >=50)
+            if (grade >= 50)
             {
                 Console.WriteLine("Great! You passed!");
             }
@@ -28,7 +28,7 @@ namespace Topic_5._2
 
             Console.WriteLine("You're planning to drive? How old are you?");
             age = Convert.ToInt32(Console.ReadLine());
-            if (age <=16)
+            if (age <= 16)
             {
                 Console.WriteLine("Keep off the roads!");
             }
@@ -41,7 +41,7 @@ namespace Topic_5._2
             Console.Clear();
 
             Console.WriteLine("How much will you bet?");
-            if (int.TryParse(Console.ReadLine(), out betNum));
+            if (int.TryParse(Console.ReadLine(), out betNum)) ;
             {
                 Console.WriteLine("You bet " + betNum.ToString("C"));
             }
@@ -54,7 +54,32 @@ namespace Topic_5._2
             Console.WriteLine("press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
-        }
+
+            Console.Write("Please enter your grade: ");
+            grade = Convert.ToDouble(Console.ReadLine());
+            if (grade < 50)
+            {
+                Console.WriteLine("Uh oh.. this is an F grade, better luck next time.");
+            }
+            else if (grade <= 65)
+            {
+                Console.WriteLine("This is a D grade");
+            }
+            else if (grade <= 75)
+            {
+                Console.WriteLine("This is a C grade");
+            }
+            else if (grade <= 85)
+            {
+                Console.WriteLine("This is a B grade!");
+            }
+            else
+            {
+                Console.WriteLine("Wow! This is an A grade! Great job!");
+            }
+
+
         }
     }
+}
 
