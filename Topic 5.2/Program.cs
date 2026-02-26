@@ -42,11 +42,11 @@ namespace Topic_5._2
             Console.Clear();
 
             Console.WriteLine("How much will you bet?");
-            if (int.TryParse(Console.ReadLine(), out bet)) ;
+            if (int.TryParse(Console.ReadLine(), out bet))
             {
                 Console.WriteLine("You bet " + bet.ToString("C"));
             }
-            // else Bracket issue persists
+            else
             {
                 Console.WriteLine("Invalid number");
                 Console.WriteLine("Your bet is set to the minumum of 1.00$");
@@ -122,6 +122,7 @@ namespace Topic_5._2
             Console.ReadLine();
             Console.Clear();
 
+            //Water
             Console.Write("What Celcius temperature is your water? ");
             water = Convert.ToDouble(Console.ReadLine());
             if (water <= 0)
@@ -144,6 +145,17 @@ namespace Topic_5._2
             Console.ReadLine();
             Console.Clear();
 
+            //How old are you
+           Console.Write("Wondering what you can/can't do? Enter your name and age here: ");
+            name = Console.ReadLine(); 
+            age = Convert.ToInt32(Console.ReadLine());
+            
+
+
+            
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }
