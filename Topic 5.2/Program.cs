@@ -7,12 +7,11 @@ namespace Topic_5._2
         static void Main(string[] args)
         {
             double grade;
-            double bet;
             double water;
             string name;
             string number;
             int age;
-            int betNum;
+            int bet;
 
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
@@ -43,15 +42,15 @@ namespace Topic_5._2
             Console.Clear();
 
             Console.WriteLine("How much will you bet?");
-            if (int.TryParse(Console.ReadLine(), out betNum)) ;
+            if (int.TryParse(Console.ReadLine(), out bet)) ;
             {
-                Console.WriteLine("You bet " + betNum.ToString("C"));
+                Console.WriteLine("You bet " + bet.ToString("C"));
             }
             // else Bracket issue persists
             {
                 Console.WriteLine("Invalid number");
                 Console.WriteLine("Your bet is set to the minumum of 1.00$");
-                betNum = 1;
+                bet = 1;
             }
             Console.WriteLine("press ENTER to continue");
             Console.ReadLine();
