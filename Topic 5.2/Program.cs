@@ -146,13 +146,31 @@ namespace Topic_5._2
             Console.Clear();
 
             //How old are you
-           Console.Write("Wondering what you can/can't do? Enter your name and age here: ");
-            name = Console.ReadLine(); 
+           Console.WriteLine("Wondering what you can/can't do? Enter your name and age here!");
+            Console.Write("Name: ");
+            name = Console.ReadLine();
+            Console.Write("Age: ");
             age = Convert.ToInt32(Console.ReadLine());
-            
-
-
-            
+            if (age <= 0)
+            {
+                Console.WriteLine("Invalid age. Please retry");
+            }
+            else if (age <= 16)
+            {
+                Console.WriteLine("You cannot Drive or Vote.");
+            }
+            else if (age >= 16)
+            {
+                Console.WriteLine("You can Drive, but not Vote.");
+            }
+            else if (age >= 18)
+            {
+                Console.WriteLine("You can Drive and Vote.");
+            }
+            else if (age >= 25)
+            {
+                Console.WriteLine("You can do just about anything!");
+            }
             Console.WriteLine("press ENTER to continue");
             Console.ReadLine();
             Console.Clear();
