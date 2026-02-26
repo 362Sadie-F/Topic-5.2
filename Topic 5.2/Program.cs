@@ -13,7 +13,7 @@ namespace Topic_5._2
             string number;
             int age;
             int betNum;
-            
+
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
             if (grade >= 50)
@@ -119,6 +119,32 @@ namespace Topic_5._2
             {
                 Console.WriteLine("Incorrect! The answer is Four.");
             }
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+
+            Console.Write("What Celcius temperature is your water? ");
+            water = Convert.ToDouble(Console.ReadLine());
+            if (water <= 0)
+            {
+                Console.WriteLine("Your water is Ice!");
+            }
+            else if (water >= 100)
+            {
+                Console.WriteLine("Your water is Steam!");
+            }
+            else if (water < 100)
+            {
+                Console.WriteLine("Your water is Water!");
+            }
+            else if (water > 0)
+            {
+                Console.WriteLine("Your water is Water!");
+            }
+            Console.WriteLine("press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+
         }
     }
 }
