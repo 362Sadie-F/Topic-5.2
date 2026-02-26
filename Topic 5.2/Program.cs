@@ -8,11 +8,12 @@ namespace Topic_5._2
         {
             double grade;
             double bet;
+            double water;
             string name;
+            string number;
             int age;
             int betNum;
-            string number;
-
+            
             Console.WriteLine("What was your lowest grade last semester?");
             grade = Convert.ToDouble(Console.ReadLine());
             if (grade >= 50)
@@ -86,17 +87,37 @@ namespace Topic_5._2
             Console.WriteLine("Which number is even?");
             Console.WriteLine("\t Five, Seven, Four, Nineteen \t");
             number = Console.ReadLine();
-            if (number == "Five" + "five")
+            if (number == "Five")
             {
                 Console.WriteLine("Incorrect! The answer is Four.");
             }
-            else if (number == "Seven" + "seven")
+            else if (number == "five")
             {
                 Console.WriteLine("Incorrect! The answer is Four.");
             }
-            else if (number == "Four" + "four")
+            else if (number == "Seven")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
+            }
+            else if (number == "seven")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
+            }
+            else if (number == "Four")
             {
                 Console.WriteLine("Correct!");
+            }
+            else if (number == "four")
+            {
+                Console.WriteLine("Correct!");
+            }
+            else if (number == "Nineteen")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
+            }
+            else if (number == "nineteen")
+            {
+                Console.WriteLine("Incorrect! The answer is Four.");
             }
         }
     }
